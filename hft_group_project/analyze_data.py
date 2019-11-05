@@ -85,9 +85,7 @@ tree1_mean.plot.bar(rot=0)
 plot1.set_title('20-30cm')
 
 #tree 2
-plot2 = plt.subpl}{P?. ,mhng
-
-ot(222)
+plot2 = plt.subplot(222)
 tree2_mean.plot.bar(rot=0)
 plot2.set_title('130-150cm')
 
@@ -114,7 +112,7 @@ plot4.set_title('water/studio')
 ## Day 1 ===
 
 ## === Day 2
-f3 = plt.figure(4)
+f4 = plt.figure(4)
 light_vals = [ tree1_mean["light"], tree2_mean["light"], tree3_mean["light"]]
 light_graph = pd.DataFrame({'x': ["20-30", "130-150", "200-300"], 'y': light_vals })
 lp = plt.plot( 'x', 'y', data=light_graph, linestyle='dashed')
@@ -122,5 +120,7 @@ plt.title("Light changes, day 2", loc='left', fontsize=12, fontweight=0, color='
 plt.xlabel("Tree Diameter")
 plt.ylabel("Light Value")
 ## Day 2 ===
+
+
 
 plt.show()
